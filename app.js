@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 connectDb();
 
 app.use(cors({
-    origin: 'https://theredpokedex.onrender.com/', // Replace with your frontend URL
+    origin: '*', // Replace with your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // Enable cookies and other credentials
   }));  
